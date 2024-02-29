@@ -9,3 +9,47 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+.menuButton, .mobileContainer {
+    display: none;
+}
+
+.mobileContainer {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 50%;
+    height: calc(100vh-100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--bgSoft);
+}
+
+@media (max-width: 768px) {
+
+    .menuButton {
+        display: block;
+        cursor: pointer;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .mobileContainer {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 50%;
+        height: calc(100vh-100px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: var(--bgSoft);
+    }
+}

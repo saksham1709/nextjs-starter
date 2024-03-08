@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from './links.module.css';
 import NavLink from "./navLink/NavLink";
 import { useState } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
 
@@ -47,7 +48,7 @@ const Navbar = () => {
                     <NavLink item={{ title: "Login", path: "/login" }} />
                 )}
             </div>
-            <button className={styles.menuButton} onClick={() => setOpen((prev) => !prev)} >Menu</button>
+            <Image className={styles.menuButton} onClick={() => setOpen((prev) => !prev)} src="/menu.png" width={30} height={30} />
             {open && (
                 <div className={styles.mobileContainer}>
                     {links.map((link) => (

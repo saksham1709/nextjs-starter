@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.title {
+    font-weight: bold;
+    color: gray;
+}
+
+.value{ 
+    font-weight: 500;
+}

@@ -51,5 +51,6 @@
         justify-content: center;
         gap: 10px;
         background-color: var(--bgSoft);
+        z-index: 999;
     }
 }
